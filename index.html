@@ -14,14 +14,15 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <style>
-    body {}
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
     header {
         display: inline-block;
         width: 800px;
         margin-top: 40px;
         margin-left: calc((100% - 800px) / 2);
-        background-color: yellow;
     }
 
     header>img {
@@ -31,18 +32,31 @@
 
     header>nav {
         float: right;
+        margin-top: 3.8px;
     }
 
     nav>a {
-        margin-left: 50px;
-        font-family: Tahoma;
+        display: inline-block;
+        padding: 0.3em;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        margin-left: 0.5em;
+        font-family: monospace;
         font-size: 18px;
+        line-height: 1em;
         text-decoration: none;
         color: #3F4371;
+        border: 0.1em solid transparent;
+        border-radius: 0.2em;
+        transition: all 0.5s;
     }
 
     nav>a:first-child {
         margin-left: 0;
+    }
+
+    nav>a:hover {
+        border-color: #3F4371;
     }
 
     main {
@@ -57,6 +71,49 @@
         float: left;
     }
 
+    h1 {
+        margin: 0;
+        font-size: 55px;
+        text-transform: uppercase;
+        color: #3F4371;
+    }
+
+    h1>span {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.3em;
+        letter-spacing: 0.05em;
+        word-spacing: 0.3em;
+    }
+
+    main>div>a {
+        display: inline-block;
+        padding: 0.5em;
+        padding-left: 3em;
+        padding-right: 3em;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3F4371;
+        border-radius: 0.3em;
+        box-shadow: 0px 0.5em 0.2em -0.45em #888;
+        transition: all 1s;
+    }
+
+    main>div>a:hover {
+        box-shadow: 0px 0.6em 0.4em -0.5em #555;
+    }
+
+    div>div {
+        margin-top: 50px;
+    }
+
+    div>div>a {}
+
     main>img {
         width: 60%;
         float: right;
@@ -64,11 +121,11 @@
 </style>
 </head>
 
-<body style="font-family: Verdana;">
-<header style="font-family: Arial;">
+<body>
+<header>
     <img src="./img/logo.png" alt="Logo">
-    <nav style="font-family: monospace;">
-        <a href="#">Home</a>
+    <nav>
+        <a style="border-color: #3F4371;" href="#">Home</a>
         <a href="#">Project</a>
         <a href="#">About</a>
         <a href="#">Service</a>
@@ -78,7 +135,14 @@
 
 <main>
     <div>
-        CONTENT
+        <h1>A happy <span>weekend</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magni ducimus assumenda optio odio dicta iusto fugit fuga laborum at, saepe, non tenetur deleniti repudiandae commodi. Porro reiciendis dolor corporis?</p>
+        <a href="#">More</a>
+        <div>
+            <a href="#">Ig</a>
+            <a href="#">Tw</a>
+            <a href="#">Fb</a>
+        </div>
     </div>
     <img src="./img/yoga.png" alt="Yoga">
 </main>
